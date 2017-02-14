@@ -25,10 +25,20 @@ var config = {
                       plugins: ['transform-runtime'],
                       presets: ['es2015', 'stage-0'],
                     }
-                }
+                },
+                { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=1000&mimetype=application/font-woff"},
+                { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader?limit=10000&publicPath=/src/client/public/"},
+                { test: /\.scss$/, loader: "style!css!sass"},
+               // { test: /\.css$/,  loader: "style-loader!css-loader!autoprefixer-loader" }
             ]
             },
   plugins: [
+  new webpack.ProvidePlugin({
+    $: "jquery",
+    jQuery:"jquery",
+    "window.jQuery":"jquery",
+    "Tether": "tether"
+  }),
   new webpack.optimize.OccurenceOrderPlugin(),
   new webpack.NoErrorsPlugin(),
   new BrowserSyncPlugin({
