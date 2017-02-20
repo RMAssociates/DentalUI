@@ -7,12 +7,7 @@ export default class Header extends React.Component {
     		<div className="row-fluid">
     			<Navigator/>
     		</div>
-    		<div className="row">
-    			<div className="col-md-6"> </div>
-	    		<div className="col-md-6">
-	    			<p> Contact Information</p>
-	    		</div>
-    		</div>
+    		
 
     </div>
   }

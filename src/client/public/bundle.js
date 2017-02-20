@@ -10197,6 +10197,22 @@
 
 	var _header2 = _interopRequireDefault(_header);
 
+	var _carousel = __webpack_require__(277);
+
+	var _carousel2 = _interopRequireDefault(_carousel);
+
+	var _introduction = __webpack_require__(278);
+
+	var _introduction2 = _interopRequireDefault(_introduction);
+
+	var _contactInfo = __webpack_require__(279);
+
+	var _contactInfo2 = _interopRequireDefault(_contactInfo);
+
+	var _working = __webpack_require__(280);
+
+	var _working2 = _interopRequireDefault(_working);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var Layout = function (_React$Component) {
@@ -10217,7 +10233,48 @@
 	        _react2.default.createElement(
 	          'h1',
 	          null,
-	          'Layout'
+	          'Welcome to Leaside dental'
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'row' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'col-md-9' },
+	            _react2.default.createElement(_carousel2.default, null)
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'col-md-3' },
+	            _react2.default.createElement(_contactInfo2.default, null)
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'row' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'col-md-6' },
+	            _react2.default.createElement(_introduction2.default, null)
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'col-md-6' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'row' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'col-md-6' },
+	                _react2.default.createElement(_working2.default, null)
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'col-md-6' },
+	                _react2.default.createElement(_contactInfo2.default, null)
+	              )
+	            )
+	          )
 	        )
 	      );
 	    }
@@ -35729,24 +35786,6 @@
 	          'div',
 	          { className: 'row-fluid' },
 	          _react2.default.createElement(_navigation2.default, null)
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'row' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'col-md-6' },
-	            ' '
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'col-md-6' },
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              ' Contact Information'
-	            )
-	          )
 	        )
 	      );
 	    }
@@ -35755,6 +35794,405 @@
 	}(_react2.default.Component);
 
 	exports.default = Header;
+
+/***/ },
+/* 277 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _getPrototypeOf = __webpack_require__(81);
+
+	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+	var _classCallCheck2 = __webpack_require__(82);
+
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+	var _createClass2 = __webpack_require__(83);
+
+	var _createClass3 = _interopRequireDefault(_createClass2);
+
+	var _possibleConstructorReturn2 = __webpack_require__(85);
+
+	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+	var _inherits2 = __webpack_require__(84);
+
+	var _inherits3 = _interopRequireDefault(_inherits2);
+
+	var _react = __webpack_require__(127);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(102);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Carousel = function (_React$Component) {
+	  (0, _inherits3.default)(Carousel, _React$Component);
+
+	  function Carousel() {
+	    (0, _classCallCheck3.default)(this, Carousel);
+	    return (0, _possibleConstructorReturn3.default)(this, (Carousel.__proto__ || (0, _getPrototypeOf2.default)(Carousel)).apply(this, arguments));
+	  }
+
+	  (0, _createClass3.default)(Carousel, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { id: 'carouselExampleIndicators', className: 'carousel slide', 'data-ride': 'carousel' },
+	        _react2.default.createElement(
+	          'ol',
+	          { className: 'carousel-indicators' },
+	          _react2.default.createElement('li', { 'data-target': '#carouselExampleIndicators', 'data-slide-to': '0', className: 'active' }),
+	          _react2.default.createElement('li', { 'data-target': '#carouselExampleIndicators', 'data-slide-to': '1' }),
+	          _react2.default.createElement('li', { 'data-target': '#carouselExampleIndicators', 'data-slide-to': '2' })
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'carousel-inner', role: 'listbox' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'carousel-item active' },
+	            _react2.default.createElement('img', { className: 'd-block img-fluid', src: './app/assets/family.jpg', alt: 'First slide' })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'carousel-item' },
+	            _react2.default.createElement('img', { className: 'd-block img-fluid', src: './app/assets/family2.jpg', alt: 'Second slide' })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'carousel-item' },
+	            _react2.default.createElement('img', { className: 'd-block img-fluid', src: './app/assets/preventive-2.jpg', alt: 'Third slide' })
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'a',
+	          { className: 'carousel-control-prev', href: '#carouselExampleIndicators', role: 'button', 'data-slide': 'prev' },
+	          _react2.default.createElement('span', { className: 'carousel-control-prev-icon', 'aria-hidden': 'true' }),
+	          _react2.default.createElement(
+	            'span',
+	            { className: 'sr-only' },
+	            'Previous'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'a',
+	          { className: 'carousel-control-next', href: '#carouselExampleIndicators', role: 'button', 'data-slide': 'next' },
+	          _react2.default.createElement('span', { className: 'carousel-control-next-icon', 'aria-hidden': 'true' }),
+	          _react2.default.createElement(
+	            'span',
+	            { className: 'sr-only' },
+	            'Next'
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	  return Carousel;
+	}(_react2.default.Component);
+
+	exports.default = Carousel;
+
+/***/ },
+/* 278 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _getPrototypeOf = __webpack_require__(81);
+
+	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+	var _classCallCheck2 = __webpack_require__(82);
+
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+	var _createClass2 = __webpack_require__(83);
+
+	var _createClass3 = _interopRequireDefault(_createClass2);
+
+	var _possibleConstructorReturn2 = __webpack_require__(85);
+
+	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+	var _inherits2 = __webpack_require__(84);
+
+	var _inherits3 = _interopRequireDefault(_inherits2);
+
+	var _react = __webpack_require__(127);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(102);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var UserGreeting = function (_React$Component) {
+	  (0, _inherits3.default)(UserGreeting, _React$Component);
+
+	  function UserGreeting() {
+	    (0, _classCallCheck3.default)(this, UserGreeting);
+	    return (0, _possibleConstructorReturn3.default)(this, (UserGreeting.__proto__ || (0, _getPrototypeOf2.default)(UserGreeting)).apply(this, arguments));
+	  }
+
+	  (0, _createClass3.default)(UserGreeting, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'jumbotron' },
+	        _react2.default.createElement(
+	          'h1',
+	          { className: 'display-4' },
+	          'Hello, world!'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          { className: 'lead' },
+	          'This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.'
+	        ),
+	        _react2.default.createElement('hr', { className: 'my-4' }),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'It uses utility classNamees for typography and spacing to space content out within the larger container.'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          { className: 'lead' },
+	          _react2.default.createElement(
+	            'a',
+	            { className: 'btn btn-primary btn-lg', role: 'button' },
+	            'Learn more'
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	  return UserGreeting;
+	}(_react2.default.Component);
+
+	exports.default = UserGreeting;
+
+/***/ },
+/* 279 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+			value: true
+	});
+
+	var _getPrototypeOf = __webpack_require__(81);
+
+	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+	var _classCallCheck2 = __webpack_require__(82);
+
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+	var _createClass2 = __webpack_require__(83);
+
+	var _createClass3 = _interopRequireDefault(_createClass2);
+
+	var _possibleConstructorReturn2 = __webpack_require__(85);
+
+	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+	var _inherits2 = __webpack_require__(84);
+
+	var _inherits3 = _interopRequireDefault(_inherits2);
+
+	var _react = __webpack_require__(127);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(102);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var ContactCard = function (_React$Component) {
+			(0, _inherits3.default)(ContactCard, _React$Component);
+
+			function ContactCard() {
+					(0, _classCallCheck3.default)(this, ContactCard);
+					return (0, _possibleConstructorReturn3.default)(this, (ContactCard.__proto__ || (0, _getPrototypeOf2.default)(ContactCard)).apply(this, arguments));
+			}
+
+			(0, _createClass3.default)(ContactCard, [{
+					key: 'render',
+					value: function render() {
+							return _react2.default.createElement(
+									'div',
+									{ className: 'card' },
+									_react2.default.createElement(
+											'h4',
+											{ className: 'card-header' },
+											'Contact Information'
+									),
+									_react2.default.createElement(
+											'div',
+											{ className: 'card-block' },
+											_react2.default.createElement(
+													'h5',
+													{ className: 'card-title' },
+													'Special title treatment'
+											),
+											_react2.default.createElement(
+													'p',
+													{ className: 'card-text' },
+													'You can drop us a message by filling in your contact information and our staff will assist in providing you any appropriate information you are looking for..'
+											),
+											_react2.default.createElement(
+													'a',
+													{ href: '#', className: 'btn btn-primary' },
+													'Contact Us'
+											)
+									)
+							);
+					}
+			}]);
+			return ContactCard;
+	}(_react2.default.Component);
+
+	exports.default = ContactCard;
+
+/***/ },
+/* 280 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _getPrototypeOf = __webpack_require__(81);
+
+	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+	var _classCallCheck2 = __webpack_require__(82);
+
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+	var _createClass2 = __webpack_require__(83);
+
+	var _createClass3 = _interopRequireDefault(_createClass2);
+
+	var _possibleConstructorReturn2 = __webpack_require__(85);
+
+	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+	var _inherits2 = __webpack_require__(84);
+
+	var _inherits3 = _interopRequireDefault(_inherits2);
+
+	var _react = __webpack_require__(127);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(102);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var WorkingHours = function (_React$Component) {
+	  (0, _inherits3.default)(WorkingHours, _React$Component);
+
+	  function WorkingHours() {
+	    (0, _classCallCheck3.default)(this, WorkingHours);
+	    return (0, _possibleConstructorReturn3.default)(this, (WorkingHours.__proto__ || (0, _getPrototypeOf2.default)(WorkingHours)).apply(this, arguments));
+	  }
+
+	  (0, _createClass3.default)(WorkingHours, [{
+	    key: 'render',
+	    value: function render() {
+
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'card' },
+	        _react2.default.createElement(
+	          'h4',
+	          { className: 'card-header' },
+	          'Working Hours'
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'card-block' },
+	          _react2.default.createElement(
+	            'p',
+	            { className: 'card-text' },
+	            'Below are our working hours, feel free to reachout and schedule an appointment. ',
+	            _react2.default.createElement(
+	              'strong',
+	              null,
+	              'Note : '
+	            ),
+	            ' we are closed on Sunday and Monday'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'ul',
+	          { className: 'list-group list-group-flush' },
+	          _react2.default.createElement(
+	            'li',
+	            { className: 'list-group-item' },
+	            'Saturday : 9:00 AM - 6:00 PM'
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            { className: 'list-group-item' },
+	            'Tuesday : '
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            { className: 'list-group-item' },
+	            'Wednesday :'
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            { className: 'list-group-item' },
+	            'Thursday :'
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            { className: 'list-group-item' },
+	            'Friday :'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'card-block' },
+	          _react2.default.createElement(
+	            'a',
+	            { href: '#', className: 'card-link' },
+	            'Availability'
+	          ),
+	          _react2.default.createElement(
+	            'a',
+	            { href: '#', className: 'card-link' },
+	            'Schedule an Appointment'
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	  return WorkingHours;
+	}(_react2.default.Component);
+
+	exports.default = WorkingHours;
 
 /***/ }
 /******/ ]);

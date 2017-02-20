@@ -4,8 +4,7 @@ import {render} from 'react-dom';
 
 export default class Carousel extends React.Component {
   render () {
-    return 
-    <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+    return <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
   <ol className="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -13,13 +12,13 @@ export default class Carousel extends React.Component {
   </ol>
   <div className="carousel-inner" role="listbox">
     <div className="carousel-item active">
-      <img className="d-block img-fluid" src="..." alt="First slide">
+      <img className="d-block img-fluid" src="./app/assets/family.jpg" alt="First slide" />
     </div>
     <div className="carousel-item">
-      <img className="d-block img-fluid" src="..." alt="Second slide">
+      <img className="d-block img-fluid" src="./app/assets/family2.jpg" alt="Second slide" />
     </div>
     <div className="carousel-item">
-      <img className="d-block img-fluid" src="..." alt="Third slide">
+      <img className="d-block img-fluid" src="./app/assets/preventive-2.jpg" alt="Third slide" />
     </div>
   </div>
   <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
